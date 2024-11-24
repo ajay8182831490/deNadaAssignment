@@ -1,8 +1,10 @@
+
+url: https://denadaassignment.onrender.com
 Bill Routes:
 
 Create a Bill
 
-Endpoint: /bill/createBill
+Endpoint: https://denadaassignment.onrender.com/bill/createBill
 
 Method: POST
 
@@ -59,7 +61,7 @@ Response:
 
 2.  Fetch All Bills
 
-Endpoint: /bill/getAllBill
+Endpoint: https://denadaassignment.onrender.com/bill/getAllBill
 
 Method: GET
 
@@ -150,7 +152,7 @@ Response:
 3> Fetch Bill Details
 
 
-Endpoint: /bill/getBillDetail/:id
+Endpoint: https://denadaassignment.onrender.com/bill/getBillDetail/:id
 
 Method: GET
 
@@ -215,7 +217,7 @@ Response:'
 
 1 > Get All Items
 
-Endpoint: /item/getAllItem
+Endpoint: https://denadaassignment.onrender.com/item/getAllItem
 
 Method: GET
 
@@ -253,7 +255,7 @@ Response:
     ]
 2 Update an Item
 
-Endpoint: /item/updateItem/:id
+Endpoint: https://denadaassignment.onrender.com/item/updateItem/:id
 
 Method: PUT
 
@@ -283,7 +285,7 @@ Response:
 
 3>Delete an Item
 
-Endpoint: /item/deletItem/:id
+Endpoint: https://denadaassignment.onrender.com /item/deletItem/:id
 
 Method: DELETE
 
@@ -307,7 +309,7 @@ Response:
 4> Add a New Item
 
 
-Endpoint: /item/addItem
+Endpoint: https://denadaassignment.onrender.com/item/addItem
 
 Method: POST
 
