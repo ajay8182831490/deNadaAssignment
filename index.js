@@ -1,4 +1,4 @@
-const express =require('express');
+const express =require('express');// using express framework for backend server
 const app=express();
 const billRoutes=require('./src/Routes/billRoutes')
 const inventaryRoutes=require('./src/Routes/inventaryRoutes')
@@ -12,5 +12,5 @@ app.use((err,req,res,next)=>{
 })
 
 app.listen(3000,()=>{
-    console.log("server are running on port no 30000")
+    console.log("server are running on port no 3000")
 })

@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 
 const createBill=async(req,res)=>{
   try {
-    const { customerName, items } = req.body;
+    const { customerName, items } = req.body;// destruct from the request body
 
     if(!customerName || !items){
         res.status(400).json("missing feild required")
@@ -14,7 +14,7 @@ const createBill=async(req,res)=>{
 
     let totalAmount = 0;
 
-    const billItems = await Promise.all(
+    const billItems = await Promise.all(// for every item firstly we will find from the invenatry that is stock item are avialble or not if item or not avialble then throw error if item exist then extract the price from inventary fro every item and after that after the inventary stock and after that create an bill for user
       items.map(async (item) => {
         const inventoryItem = await prisma.inventory.findUnique({
           where: { id: item.inventoryId }

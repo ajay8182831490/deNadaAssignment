@@ -1,16 +1,15 @@
 const express=require('express');
-const router=express.Router();
-const Prisma = require('@prisma/client');
+const router=express.Router();// for the routing we are using router middleware
+
 const { createBill,fetchAllBill,fetchBillDetail } = require('../controller/billController');
-const { PrismaClient } = Prisma;
-const prisma=new PrismaClient()
 
-// create bill
-//get all bill
-// get detail bill
 
-router.post('/bill/createBill',createBill)
-router.get('/bill/getAllBill',fetchAllBill);
-router.get('/bill/getBillDetail/:id',fetchBillDetail);
+
+
+
+
+router.post('/bill/createBill',createBill)// create bill routes
+router.get('/bill/getAllBill',fetchAllBill);//get all bill routes
+router.get('/bill/getBillDetail/:id',fetchBillDetail);//// get detail bill
 
 module.exports =router;
