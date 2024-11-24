@@ -1,8 +1,13 @@
 Bill Routes:
+
 Create a Bill
+
 Endpoint: /bill/createBill
+
 Method: POST
+
 Description: Creates a new bill by specifying the customer name, items sold, and their quantities.
+
 requestBody:
    {
   "customerName": "Ajay Kumar Gupta",
@@ -11,15 +16,25 @@ requestBody:
     { "inventoryId": 2, "quantity": 1 }
   ]
 } 
+
+
 Response:
+
   {
   "message": "bill created successfully",
+  
   "bill": {
+  
     "id": 2,
+    
     "customerName": "Ajay Kumar Gupta",
+    
     "totalAmount": 19200,
+    
     "createdAt": "2024-11-24T02:49:17.680Z",
+    
     "items": [
+    
       {
         "id": 3,
         "quantity": 1,
@@ -42,10 +57,15 @@ Response:
 
 
 2.  Fetch All Bills
+
 Endpoint: /bill/getAllBill
+
 Method: GET
+
 Description: Retrieves a list of all bills created.
+
 Response:
+
 [
   {
     "id": 1,
@@ -119,12 +139,19 @@ Response:
 
 
 3> Fetch Bill Details
+
+
 Endpoint: /bill/getBillDetail/:id
+
 Method: GET
+
 Description: Retrieves detailed information about a specific bill, including the items sold and their quantities.
+
 Path Parameter:
 :id - The unique ID of the bill.
-Response:{
+
+Response:'
+{
   "id": 1,
   "customerName": "Ajay Gupta",
   "totalAmount": 48000,
@@ -159,10 +186,16 @@ Response:{
   ]
 }
 // 
+
+
 1 > Get All Items
+
 Endpoint: /item/getAllItem
+
 Method: GET
+
 Description: Fetches a list of all items available in the inventory.
+
 Response:
 [
   {
@@ -196,31 +229,50 @@ Request:
 "price": 9600,
 "quantity": 4
 }
+
+
 Response:
 {
   "message": "itme updated successfully"
 }
 
 3>Delete an Item
+
 Endpoint: /item/deletItem/:id
+
 Method: DELETE
+
 Description: Deletes an item from the inventory.
+
 Path Parameter:
+
 :id - The unique ID of the item to be deleted.
+
 Response:
 {
 message":"item deleted successfully from database"
 }
+
+
+
 4> Add a New Item
+
+
 Endpoint: /item/addItem
+
 Method: POST
+
 Description: Adds a new item to the inventory
+
 Request:
+
 {
   "name": "keyboard",
   "price": 75.00,
   "quantity": 20
 }
+
+
 Response:
 {
   "id": 5,
